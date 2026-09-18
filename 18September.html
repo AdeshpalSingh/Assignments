@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // Functions with Return Value
+        // Q1. Create a function add(a, b) that accepts two numbers and returns their sum.
+        //function add(a, b) {
+        //    sum = a + b
+        //    return sum
+        //}
+        //result = add(10, 20)
+        //console.log(result)
+        // Answer: 30
+
+
+        // Q2. Create a function subtract(a, b) that accepts two numbers and returns the result of subtraction.
+        function subtract(a, b) {
+            sub = a - b
+            return sub
+        }
+        result = subtract(40, 20)
+        console.log(result)
+        // Answer: 20
+
+
+        // Q3. Create a function multiply(a, b) that accepts two numbers and returns their multiplication.
+        function multiply(a, b){
+            mul = a * b
+            return mul
+        }
+        result = multiply(12, 5)
+        console.log(result)
+        // Answer: 60
+
+
+        // Q4. Create a function divide(a, b) that accepts two numbers and returns their division result.
+        function divide(a, b){
+            div = a / b
+            return div
+        }
+        result = divide(25, 5)
+        console.log(result)
+        // Answer: 5
+
+
+        // Q5. Create a function square(num) that accepts a number and returns its square.
+        //function  square(num){
+        //    num1 = num * num
+        //    return num1
+        //}
+        //result = square(5)
+        //console.log(result)
+        // Answer: 25
+
+
+        // Q6. Create a function cube(num) that accepts a number and returns its cube.
+        //function cube(num){
+        //    num2 = num * num * num
+        //    return num2
+        //}
+        //result = cube(7)
+        //console.log(result)
+        // Answer: 343
+
+
+        // Q7. Create a function checkEvenOdd(num) that returns "Even" if the number is even and "Odd" if the number is odd.
+        //function checkEvenOdd(num){
+        //    if(num % 2 == 0){
+        //        return "The Number is Even"
+        //    } else {
+        //        return "The Number is Odd"
+        //    }
+        //}
+        //result = checkEvenOdd(6)
+        //console.log(result)
+        // Answer: The Number is Even
+
+
+        // Q8. Create a function findGreater(a, b) that accepts two numbers and returns the greater number.
+        //function findGreater(a, b){
+        //    if(a > b){
+        //        return "Largest : " +a
+        //    } else{
+        //        return "Not Largest: " +b
+        //    }       
+        //}
+        //result = findGreater(45, 35)
+        //console.log(result)
+        // Answer: Largest : 45
+
+
+        // Q9. Create a function checkNumber(num) that returns "Positive" if the number is greater than 0, "Negative" if it is less than 0, and "Zero" if it is 0.
+        //function checkNumber(num){
+        //    if(num > 0){
+        //        return "Positive"
+        //    } else if(num < 0){
+        //        return "Negative"
+        //    } else
+        //    return "Zero"
+        //}
+        //result = checkNumber(45)
+        //console.log(result)
+        // Answer: Positive
+
+
+        // Q10. Create a function calculatePercentage(obtained, total) that returns the percentage of marks.
+        function calculatePercentage(obtained, total){
+            percentage = (obtained/total)*100
+            return percentage
+        }
+        result=calculatePercentage(250, 500)
+        console.log(result)
+        // Answer: 50
+
+
+        // Q11. Create a function calculateDiscount(price, discount) that accepts price and discount percentage and returns the discount amount.
+        function calculateDiscount(price, discount){
+            sum = ((discount / 100) * price)
+            return sum
+        }
+        result = calculateDiscount(1000, 10)
+        console.log(result)
+        // Answer: 100
+
+
+        // Q12. Create a function finalPrice(price, discount) that returns the price after applying the discount.
+        function finalPrice(price, discount){
+            price1 = (price * (discount/100))
+            final = price - price1
+            return final
+        }
+        result = finalPrice(500, 10)
+        console.log(result)
+        // Answer: 450
+
+
+
+        // Q13. Create a function celsiusToFahrenheit(celsius) that converts Celsius into Fahrenheit and returns the result.
+        function celsiusToFahrenheit(celsius){
+            temp1 = (celsius * 9/5) + 32
+            return temp1
+        }
+        result = celsiusToFahrenheit(37)
+        console.log(result)
+        // Answer: 98.6
+        
+
+        // Q14. Create a function calculateAge(birthYear, currentYear) that returns the person's age.
+        function calculateAge(birthYear, currentYear){
+            return currentYear - birthYear
+        }
+        result = calculateAge(2004, 2026)
+        console.log(result)
+        // Answer: 22
+
+
+        // Q15. Create a function getGrade(marks) that returns: 90–100 → "A", 80–89 → "B", 70–79 → "C", 60–69 → "D", Below 60 → "F".
+        function getGrade(marks){
+            if(marks>=90 && marks<=100){
+                return "A"
+            } else if(marks>=80 && marks<=89){
+                return "B"
+            } else if(marks>=70 && marks<=79){
+                return "C"
+            } else if(marks>=60 && marks<=69){
+                return "D"
+            } else{
+                marks<=60
+                return "F"
+            }
+        }
+        result = getGrade(75)
+        console.log(result)
+        // Answer: C
+    </script>
+
+</body>
+
+</html>
